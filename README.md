@@ -26,3 +26,23 @@ operating system because he wanted to<br>
 use the functions of his new PC with an<br>
 80386 processor. Development was done on<br>
 MINIX using the GNU C Compiler.<br>
+
+
+**Plan**
+    
+- understanding requirements
+- develop 3 main concepts of solving the task
+- write unit tests
+- choose the best solution
+- improve code if possible
+- think about possible load and Prod deployment and improve the code
+- documentation: explain these decisions here or in comments
+- follow:
+  - Clean code
+  - Simplicity and readability: follow KISS principle
+  - Over Engineering
+  - Test coverage
+  - Understanding of the challenge
+
+
+
