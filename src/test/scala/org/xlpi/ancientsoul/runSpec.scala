@@ -50,6 +50,20 @@ GNU C Compiler."""
     assertEquals(actual20, expectedOutput20)
   }
 
+  test("check textFormatter function expected exception with limit 0") {
+    intercept[IllegalArgumentException](Run.textFormatter(inputText = testInput, lineSizeLimit = 0))
+
+  }
+
+  test("check textFormatter function expected exception with text size 0") {
+    intercept[IllegalArgumentException](Run.textFormatter(inputText = "", lineSizeLimit = 1))
+
+  }
+
+  test("check textFormatter function expected exception with text size 0") {
+    intercept[IllegalArgumentException](Run.textFormatter(inputText = "", lineSizeLimit = 0))
+  }
+
   test("check textFormatter function with limit 2000") {
     val actual2000 = Run.textFormatter(inputText = testInput, lineSizeLimit = 2000)
     assertEquals(actual2000, testInput)

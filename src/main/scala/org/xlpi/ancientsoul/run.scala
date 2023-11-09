@@ -6,6 +6,8 @@ import scala.annotation.tailrec
 object Run extends App {
 
   def textFormatter(inputText: String, lineSizeLimit: Int): String = {
+    require(lineSizeLimit >=1, "limit size values are too small")
+    require(inputText.length >= 1, "input text size are too small")
     val words = inputText.split(" ")
 
     @tailrec
